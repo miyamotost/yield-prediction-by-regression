@@ -42,7 +42,7 @@ for f in ['x16', 'x9', 'x12']:
 
 # (2) future prediction
 print('future prediction...')
-for y in [2020, 2040, 2060, 2080, 2100]:
+for y in [2020, 2040, 2060, 2080, 2100, 2120]:
     tmp_df = df_future[(df_future['x12'] == y)]
     tmp_pred = results.predict(tmp_df) 
     tmp_pred = tmp_pred.tolist()
